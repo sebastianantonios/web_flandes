@@ -1,16 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* General */
 
 body {
-  color: black;
+  font-family: Arial,
+sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
 }
-
-p {
-  color: red;
-  background-color: aqua;
-}
-
-/*# sourceMappingURL=styles.css.map */
