@@ -27,6 +27,7 @@ body {
 }
 
 /* Contenedor del slider */
+
 .slider {
   position: relative;
   max-width: 50%;
@@ -79,6 +80,6 @@ img {
 
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-}
+} 
 
 /*# sourceMappingURL=styles.css.map */
