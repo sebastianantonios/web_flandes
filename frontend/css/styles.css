@@ -1,10 +1,21 @@
-/* General */
+:root {
+  --titleweb: 25px;
+  --color_web:#2388e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: Arial,
-sans-serif;
-margin: 0;
-padding: 0;
-background-color: #f4f4f4;
-/* color: red;*/
+  color: black;
 }
+
+.nav_container {
+  display: flex;
+  background-color: var(--color_web);
+}
+
+/*# sourceMappingURL=styles.css.map */

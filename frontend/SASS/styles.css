@@ -1,3 +1,8 @@
+:root {
+  --titleweb: 25px;
+  --color_web:#2388e6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -8,7 +13,7 @@ body {
   color: black;
 }
 
-p {
-  color: red;
-  background-color: aqua;
+.nav_container {
+  display: flex;
+  background-color: var(--color_web);
 }/*# sourceMappingURL=styles.css.map */
