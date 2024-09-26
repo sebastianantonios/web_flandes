@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -21,13 +22,17 @@ body {
   background-color: var(--color_web);
 }
 
+.container_items_nav {
+  display: flex;
+  gap: 2em;
+}
+
 .nav_link_main {
   color: white;
   text-decoration: none;
 }
 
 /* Contenedor del slider */
-
 .slider {
   position: relative;
   max-width: 50%;
@@ -48,7 +53,7 @@ body {
 }
 
 img {
-  width: 50%;
+  width: 100%;
   object-fit: cover;
   display: block;
 }
@@ -80,6 +85,6 @@ img {
 
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
-} 
+}
 
 /*# sourceMappingURL=styles.css.map */
