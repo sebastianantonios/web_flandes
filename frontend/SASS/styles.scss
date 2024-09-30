@@ -36,102 +36,114 @@ body{
     text-decoration: none;
 }
 
-/* Contenedor del slider */
 .slider-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-  }
-  
-  .slider {
+    background-color: #fef7e9;
+    padding: 50px 0;
+}
+
+.slider {
     position: relative;
-    width: 90%;
-    max-width: 1200px; 
-    overflow: hidden;
+    width: 80%;
+    max-width: 1200px;
     display: flex;
-    align-items: center;
-  }
-  
-  .slide {
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-    width: 100%;
-    transition: opacity 0.5s ease-in-out;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .info {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.info {
     width: 50%;
-    padding: 20px;
-    color: #2c3e50;
-  }
-  
-  .info h2 {
+    padding: 40px;
+}
+
+.info h2 {
     font-size: 2.5rem;
-    font-style: italic;
-    margin-bottom: 15px;
-  }
-  
-  .info ul {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.info ul {
     list-style-type: none;
-    margin-bottom: 15px;
-    list-style-type: square; /* Cambia el estilo de la viñeta */
-    padding-left: 20px;
-  }
-  
-  .info li {
-    margin-bottom: 5px;
-    font-size: 1.1rem;
-  }
-  
-  .info p {
+    padding-left: 0;
     font-size: 1rem;
-    margin-bottom: 20px;
-  }
-  
-  .btn {
+    color: #34495e;
+}
+
+.info ul li {
+    margin-bottom: 10px;
+}
+
+.info p {
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+.btn {
     display: inline-block;
     background-color: #2c3e50;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-  }
-  
-  .navigation {
+    margin-top: 20px;
+}
+
+.image-container {
+    width: 50%;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: none;
+    border-radius: 8px;
+}
+
+.image-container img.active {
+    display: block;
+}
+
+/* Estilos para los botones de navegación */
+.navigation {
     position: absolute;
     top: 50%;
     width: 100%;
     display: flex;
     justify-content: space-between;
     transform: translateY(-50%);
-  }
-  
-  .prev, .next {
-    cursor: pointer;
-    padding: 15px;
+}
+
+.prev, .next {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
     font-size: 2rem;
-  }
-  
-  .indicators {
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos para los indicadores */
+.dots {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-  }
-  
-  .dot {
+}
+
+.dot {
     height: 15px;
     width: 15px;
     margin: 0 5px;
@@ -139,20 +151,11 @@ body{
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
-  }
-  
-  .dot.active {
-    background-color: #717171;
-  }
-  
-  .slide {
-    opacity: 0;
-  }
-  
-  .slide.active {
-    opacity: 1;
-  }
+}
 
+.dot.active {
+    background-color: #2c3e50;
+}
 .whatsapp-icon {
     position: fixed;
     bottom: 20px;

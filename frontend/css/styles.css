@@ -34,77 +34,82 @@ body {
   text-decoration: none;
 }
 
-/* Contenedor del slider */
 .slider-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  background-color: #fef7e9;
+  padding: 50px 0;
 }
 
 .slider {
   position: relative;
-  width: 90%;
+  width: 80%;
   max-width: 1200px;
-  overflow: hidden;
   display: flex;
-  align-items: center;
-}
-
-.slide {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .info {
   width: 50%;
-  padding: 20px;
-  color: #2c3e50;
+  padding: 40px;
 }
 
 .info h2 {
   font-size: 2.5rem;
-  font-style: italic;
-  margin-bottom: 15px;
+  font-weight: bold;
+  color: #2c3e50;
 }
 
 .info ul {
   list-style-type: none;
-  margin-bottom: 15px;
-  list-style-type: square; /* Cambia el estilo de la viñeta */
-  padding-left: 20px;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #34495e;
 }
 
-.info li {
-  margin-bottom: 5px;
-  font-size: 1.1rem;
+.info ul li {
+  margin-bottom: 10px;
 }
 
 .info p {
-  font-size: 1rem;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #7f8c8d;
 }
 
 .btn {
   display: inline-block;
   background-color: #2c3e50;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  margin-top: 20px;
 }
 
+.image-container {
+  width: 50%;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  display: none;
+  border-radius: 8px;
+}
+
+.image-container img.active {
+  display: block;
+}
+
+/* Estilos para los botones de navegación */
 .navigation {
   position: absolute;
   top: 50%;
@@ -115,16 +120,22 @@ body {
 }
 
 .prev, .next {
-  cursor: pointer;
-  padding: 15px;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 50%;
   font-size: 2rem;
 }
 
-.indicators {
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Estilos para los indicadores */
+.dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -141,15 +152,7 @@ body {
 }
 
 .dot.active {
-  background-color: #717171;
-}
-
-.slide {
-  opacity: 0;
-}
-
-.slide.active {
-  opacity: 1;
+  background-color: #2c3e50;
 }
 
 .whatsapp-icon {

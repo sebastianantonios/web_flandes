@@ -1,36 +1,44 @@
-const slides = document.querySelectorAll('.slide');
-const nextBtn = document.querySelector('.next');
-const prevBtn = document.querySelector('.prev');
-const dots = document.querySelectorAll('.dot');
 let currentSlide = 0;
+const images = document.querySelectorAll('.image-container img');
+const dots = document.querySelectorAll('.dot');
+const prevBtn = document.querySelector('.prev');
+const nextBtn = document.querySelector('.next');
 
+// Mostrar la diapositiva actual
 function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    dots[i].classList.remove('active');
-    if (i === index) {
-      slide.classList.add('active');
-      dots[i].classList.add('active');
-    }
-  });
+    images.forEach((img, i) => {
+        img.classList.remove('active');
+        dots[i].classList.remove('active');
+        if (i === index) {
+            img.classList.add('active');
+            dots[i].classList.add('active');
+        }
+    });
 }
 
-nextBtn.addEventListener('click', () => {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-});
-
-prevBtn.addEventListener('click', () => {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-});
-
-dots.forEach((dot, i) => {
-  dot.addEventListener('click', () => {
-    currentSlide = i;
+// Función diapositiva siguiente
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % images.length;
     showSlide(currentSlide);
-  });
+}
+
+// Función diapositiva anterior
+function prevSlide() {
+    currentSlide = (currentSlide - 1 + images.length) % images.length;
+    showSlide(currentSlide);
+}
+
+// Puntos de navegacion 
+dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+        currentSlide = index;
+        showSlide(currentSlide);
+    });
 });
 
-// Start the first slide as active
+// Eventos de navegación
+nextBtn.addEventListener('click', nextSlide);
+prevBtn.addEventListener('click', prevSlide);
+
+// retorna la primera imagen
 showSlide(currentSlide);
