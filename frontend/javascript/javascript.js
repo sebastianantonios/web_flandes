@@ -42,3 +42,4 @@ prevBtn.addEventListener('click', prevSlide);
 
 // retorna la primera imagen
 showSlide(currentSlide);
+
