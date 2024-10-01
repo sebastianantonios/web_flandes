@@ -16,6 +16,7 @@
 @media (min-width: 768px) {
   body {
     color: black;
+    margin: 0;
   }
   .nav_container {
     display: flex;
