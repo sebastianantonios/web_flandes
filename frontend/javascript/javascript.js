@@ -1,3 +1,13 @@
+//menu-desplegable_mobile
+const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileMenuToggle.addEventListener('click', () => {
+mobileMenu.classList.toggle('open');
+
+});
+
+
 let currentSlide = 0;
 const images = document.querySelectorAll('.image-container img');
 const dots = document.querySelectorAll('.dot');
