@@ -278,7 +278,9 @@
     justify-content: center;
   }
   .info_we_title {
-    font-size: 1.2em;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
   }
 
   .info_we {
@@ -315,7 +317,10 @@
 
   .servicios{
     text-align: center;
-    background-color: #fdfeff;
+    font-size: 2rem;
+    margin: 35px 0 0 0;
+    font-style: italic;
+    font-weight: bold;
   }
 
   .info h2 {
