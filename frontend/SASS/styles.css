@@ -280,7 +280,9 @@
     justify-content: center;
   }
   .info_we_title {
-    font-size: 1.2em;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
   }
   .info_we {
     font-size: 1em;
@@ -288,6 +290,13 @@
     width: 800px;
     text-align: justify;
     line-height: 1.5;
+  }
+  .servicios {
+    text-align: center;
+    font-size: 2rem;
+    margin: 35px 0 0 0;
+    font-style: italic;
+    font-weight: bold;
   }
   /* SLIDER */
   .slider-container {
@@ -492,4 +501,5 @@
     width: 24px;
     height: 24px;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+/*# sourceMappingURL=styles.css.map */
