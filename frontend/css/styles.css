@@ -88,27 +88,17 @@ html, body {
   display: none;
 }
 
-.hero-text {
-  padding: 1rem 0;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
 .hero_title {
   margin: 0 0 0.5rem 0;
 }
 
 .servicios {
   text-align: center;
-  margin: 3rem 0 0 0;
 }
 
 .nosotros_info {
   display: flex;
-  padding: 2rem 1rem;
+  padding: 6rem 1rem;
   align-items: center;
   text-align: justify;
   flex-direction: column;
@@ -406,26 +396,13 @@ footer {
     z-index: -1;
     transform: translate(-50%, -50%);
   }
-  .hero-text {
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    z-index: 1;
-    padding: 20px;
+  
+  .description_web{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0 ;
   }
-  .hero-text h2 {
-    font-size: 3rem;
-    margin: 0;
-    color: #df6413;
-    border: white;
-  }
-  .hero-text p {
-    font-size: 1.2rem;
-    margin: 10px 0 0;
-  }
+
   .nosotros_info {
     display: flex;
     flex-direction: row;
@@ -459,7 +436,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 0;
+    padding: 0;
   }
   .slider {
     position: relative;
@@ -576,7 +553,7 @@ footer {
   /* Footer */
   footer {
     background-color: rgba(221, 218, 218, 0.9058823529);
-    padding: 40px 20px;
+    padding: 8rem 5rem;
     font-size: 0.9rem;
     color: #555;
   }

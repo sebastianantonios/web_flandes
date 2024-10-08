@@ -53,3 +53,22 @@ prevBtn.addEventListener('click', prevSlide);
 // retorna la primera imagen
 showSlide(currentSlide);
 
+//transicion de informacion
+
+document.addEventListener("DOMContentLoaded", function() {
+    let textContainer = document.querySelector(".description_web");
+    let text = textContainer.textContent.trim();
+    let index = 0;
+    let textColor = window.getComputedStyle(textContainer).color;
+
+    textContainer.textContent = "";
+
+    function addLetter() {
+        textContainer.innerHTML += '<span style="color:' + textColor + '">' + text[index++] + '</span>';
+        if (index < text.length) {
+            setTimeout(addLetter, 70); //velocidad
+        }
+    }
+
+    addLetter();
+});
