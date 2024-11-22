@@ -105,7 +105,8 @@ html, body {
 
 .servicios{
   text-align: center;
-  margin: 3rem 0 0 0;
+  font-size: 2rem;
+  margin: 3rem 0 0 0; 
 }
 
 .nosotros_info{
@@ -117,6 +118,10 @@ html, body {
   background-color: rgba(221, 218, 218, 0.9058823529);
 }
 
+.title_we{
+  font-size: 2rem;
+  margin: 0 0 10px 0;
+}
 
 /* SLIDER */
 .slider-container {
@@ -283,6 +288,71 @@ html, body {
   height: 100%;
   cursor: pointer;
 }
+
+
+/* General */
+.tarifas-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Formulario */
+.tarifas-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Resultado */
+.resultado {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 1rem;
+}
+
 
   /* Footer */
   footer {

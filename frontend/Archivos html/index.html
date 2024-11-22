@@ -22,57 +22,33 @@
         <nav id="mobile-menu" class="mobile-menu">
             <ul>
                 <li class="container_mobile">
-                    <a href="../Archivos html/index.html">
+                    <a href="#">
                         <i class="fa-solid fa-arrow-right"></i>
                         <span>Inicio</span>
                     </a>
                 </li>
                 <li class="container_mobile">
-                    <a href="../Archivos html/catalogo.html">
+                    <a href="#sobre nosotros">
                         <i class="fa-solid fa-arrow-right"></i>
-                        <span>Catalogo</span>
+                        <span>Sobre nosotros</span>
                     </a>
                 </li>
                 <li class="container_mobile">
-                    <a href="../Archivos html/blog.html">
+                    <a href="#servicios">
                         <i class="fa-solid fa-arrow-right"></i>
-                        <span>Ofertas</span>
+                        <span>Servicios</span>
                     </a>
                 </li>
                 <li class="container_mobile">
-                    <a href="../Archivos html/tienda.html">
+                    <a href="#tarifas">
                         <i class="fa-solid fa-arrow-right"></i>
-                        <span>Colecciones</span>
+                        <span>Tarifas</span>
                     </a>
                 </li>
                 <li class="container_mobile">
-                    <a href="../Archivos html/blog.html">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <span>Guia de tallas</span>
-                    </a>
-                </li>
-                <li class="container_mobile">
-                    <a href="../Archivos html/blog.html">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <span>Blog</span>
-                    </a>
-                </li>
-                <li class="container_mobile">
-                    <a href="../Archivos html/admin.html">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <span>Nosotros</span>
-                    </a>
-                </li>
-                <li class="container_mobile">
-                    <a href="../Archivos html/admin.html">
+                    <a href="#contacto">
                         <i class="fa-solid fa-arrow-right"></i>
                         <span>Contacto</span>
-                    </a>
-                </li>
-                <li class="container_mobile">
-                    <a href="../Archivos html/admin.html">
-                        <i class="fa-solid fa-arrow-right"></i>
-                        <span>Pregunas Frecuentes</span>
                     </a>
                 </li>
             </ul>
@@ -94,6 +70,7 @@
             <a href="#inicio" class="nav_link_main">INICIO</a>
             <a href="#sobre nosotros" class="nav_link_main">SOBRE NOSOTROS</a>
             <a href="#servicios" class="nav_link_main">SERVICIOS</a>
+            <a href="#tarifas" class="nav_link_main">TARIFAS</a>
             <a href="#contacto" class="nav_link_main">CONTACTO</a>
         </div>
     </nav>
@@ -108,9 +85,7 @@
     <!-- Sobre Nosotros -->
 
     <section id="sobre nosotros" class="nosotros_info">
-       <div class="info_we_title">
         <h2 class="title_we">Sobre Nosotros</h2>
-       </div>
        <div class="info_we">
         <p>Acogedora casa en Flandes, Tolima, ubicada a solo 5 minutos de Girardot, en un conjunto turístico tranquilo y seguro. La propiedad cuenta con 2 amplias alcobas. Una de ellas tiene 2 camarotes y una cama auxiliar, además de 3 colchones adicionales para mayor comodidad. La alcoba principal cuenta con una cama doble y doble colchón. 
             La casa está totalmente amoblada y dispone de 2 baños, una sala amplia y acogedora, una cocina bien equipada. Además, tiene un mini balcón perfecto para disfrutar de asados al aire libre.
@@ -119,7 +94,7 @@
        </div>
     </section>
        <!-- Galeria -->
-       <h2 id="servicios" class="servicios">SERVICIOS</h2>
+       <h2 id="servicios" class="servicios">Servicios</h2>
        <section class="slider-container">
         <div class="slider">
             <!-- Contenido de la diapositiva -->
@@ -149,8 +124,10 @@
                 <img src="../imagenes/pscina flandes.jpg" alt="piscina" class="active">
                 <img src="../imagenes/Cuarto Principal Flandes.jpg" alt="Habitación">
                 <img src="../imagenes/cuarto 2 flandes.jpg" alt="Casa Flandes">
-                <img src="../imagenes/Panoramica piscina flandes.jpg" alt="piscina" class="active">
+                <img src="../imagenes/pscina flandes.jpg" alt="piscina" class="active">
                 <img src="../imagenes/Cocina Flandes.jpg" alt="Habitación">
+                <img src="../imagenes/sala flandes.jpg" alt="Habitación">
+                <img src="../imagenes/Sala v2 flandes.jpg" alt="Habitación">
             </div>
 
             <!-- Botones de navegación -->
@@ -162,6 +139,9 @@
             <!-- Indicadores del slider -->
             <div class="dots">
                 <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -185,20 +165,65 @@
                     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon">
                 </a>
             </div>
+
+                <!-- Sección de Tarifas -->
+  <section id="tarifas" class="tarifas-section">
+    <h2 class="section-title">Tarifas y Precios</h2>
+    <p class="section-description">
+      Consulta los precios según el número de noches y personas. ¡Encuentra la mejor opción para tu estadía en nuestra casa en Flandes!
+    </p>
+    
+    <div class="tarifas-container">
+      <form id="tarifas-form" class="tarifas-form">
+        <label for="noches" class="form-label">Número de noches:</label>
+        <select id="noches" class="form-select">
+          <option value="1">1 noche</option>
+          <option value="2">2 noches</option>
+          <option value="3">3 noches</option>
+          <option value="4">4 noches</option>
+          <option value="5">5 noches</option>
+        </select>
+        
+        <label for="personas" class="form-label">Número de personas:</label>
+        <select id="personas" class="form-select">
+          <option value="5">5 personas</option>
+          <option value="6">6 personas</option>
+          <option value="7">7 personas</option>
+          <option value="8">8 personas</option>
+          <option value="9">9 personas</option>
+          <option value="10">10 personas</option>
+          <option value="11">11 personas</option>
+          <option value="12">12 personas</option>
+          <option value="13">13 personas</option>
+          <option value="14">14 personas</option>
+          <option value="15">15 personas</option>
+          <option value="16">16 personas</option>
+          <option value="17">17 personas</option>
+          <option value="18">18 personas</option>
+        </select>
+        
+        <button type="button" id="calcular-precio" class="btn">Calcular precio</button>
+      </form>
+      
+      <div id="resultado" class="resultado">
+        <p>Selecciona las opciones para ver el precio total.</p>
+      </div>
+    </div>
+  </section>
     <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Información</h3>
                 <ul>
-                    <li><a Target="_blank" href="../imagenes/Política de Cancelación..pdf">Política de cancelación</a></li>
+                    <li><a Target="_blank" href="../Documentos//Política de Cancelación..pdf">Política de cancelación</a></li>
                     <li><a Target="_blank" href="#">Normas de la propiedad</a></li>
                 </ul>
             </div>
             <div class="footer-section">
                 <h3>Conjuto Tayrona.</h3>
                 <ul>
-                    <li><a Target="_blank" href="../imagenes/Reglamentopiscina.pdf">Reglamento uso piscina</a></li>
+                    <li><a Target="_blank" href="../Documentos//Reglamentopiscina.pdf">Reglamento uso piscina</a></li>
                 </ul>
             </div>
             <div id="contacto" class="footer-section">

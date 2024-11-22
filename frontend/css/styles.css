@@ -103,47 +103,22 @@ html, body {
 
 .servicios {
   text-align: center;
+  font-size: 2rem;
   margin: 3rem 0 0 0;
 }
 
 .nosotros_info {
   display: flex;
-  padding: 12rem 0;
-  color: #fff;
-  flex-direction: row;
-  gap: 2em;
-  position: relative;
-  z-index: 1;
-  background-color: var(--background_new); 
+  padding: 2rem 1rem;
   align-items: center;
-  justify-content: center;
+  text-align: justify;
+  flex-direction: column;
+  background-color: rgba(221, 218, 218, 0.9058823529);
 }
 
-.nosotros_info::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url('../imagenes/frentecasaflandes...jpg');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.9;
-  z-index: -1;
-  image-rendering: optimizeQuality; /* Prioriza la calidad de la imagen */
-}
-
-
-.nosotros_info::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); 
-  z-index:-1;
+.title_we {
+  font-size: 2rem;
+  margin: 0 0 10px 0;
 }
 
 /* SLIDER */
@@ -289,13 +264,6 @@ html, body {
   width: 60px;
   height: 60px;
   margin-bottom: 70px;
-  z-index: 5;
-}
-
-.home:hover{
-  background-color: #90ebf7;
-  border-radius: 5px;
-  padding: 10px;
 }
 
 .home img {
@@ -310,13 +278,75 @@ html, body {
   right: 20px;
   width: 60px;
   height: 60px;
-  z-index: 5;
 }
 
 .whatsapp-icon img {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+/* General */
+.tarifas-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+/* Formulario */
+.tarifas-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+}
+
+.form-select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Resultado */
+.resultado {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 1rem;
 }
 
 /* Footer */
@@ -458,7 +488,6 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    -o-object-fit: cover;
     object-fit: cover;
     z-index: -1; /* El video va detrás del contenido */
   }
